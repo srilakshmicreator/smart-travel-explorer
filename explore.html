@@ -1,0 +1,193 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explore Countries | Smart Travel Explorer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <div class="logo">
+            🌍 Smart Travel
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html" class="active">Explore</a></li>
+            <li><a href="tips.html">Travel Tips</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+
+    </nav>
+
+
+    <!-- Explore Header -->
+    <section class="explore-header">
+
+        <p class="welcome">DISCOVER THE WORLD 🌎</p>
+
+        <h1>Explore a Country</h1>
+
+        <p>
+            Search for any country and discover useful information
+            about it instantly.
+        </p>
+
+    </section>
+
+
+    <!-- Search Section -->
+    <section class="search-section">
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="countryInput"
+                placeholder="Enter country name...">
+
+            <button onclick="searchCountry()">
+                🔍 Search
+            </button>
+
+        </div>
+
+        <p id="message"></p>
+
+    </section>
+
+
+    <!-- Country Information -->
+    <section id="countryCard" class="country-card">
+
+        <!-- Country Flag -->
+        <div class="flag-section">
+
+            <img id="flag" src="" alt="Country Flag">
+
+            <h2 id="countryName"></h2>
+
+        </div>
+
+
+        <!-- Country Details -->
+        <div class="details">
+
+            <div class="detail-card">
+                <span>🏛️</span>
+                <p>Capital</p>
+                <strong id="capital">-</strong>
+            </div>
+
+
+            <div class="detail-card">
+                <span>👥</span>
+                <p>Population</p>
+                <strong id="population">-</strong>
+            </div>
+
+
+            <div class="detail-card">
+                <span>🌎</span>
+                <p>Region</p>
+                <strong id="region">-</strong>
+            </div>
+
+
+            <div class="detail-card">
+                <span>💰</span>
+                <p>Currency</p>
+                <strong id="currency">-</strong>
+            </div>
+
+
+            <div class="detail-card">
+                <span>🗣️</span>
+                <p>Languages</p>
+                <strong id="languages">-</strong>
+            </div>
+
+
+            <div class="detail-card">
+                <span>🕐</span>
+                <p>Timezone</p>
+                <strong id="timezone">-</strong>
+            </div>
+
+        </div>
+
+
+        <!-- Map Button -->
+        <a
+            id="mapLink"
+            href="#"
+            target="_blank"
+            class="map-button">
+
+            📍 View Country on Map
+
+        </a>
+
+    </section>
+
+
+    <!-- Popular Countries -->
+    <section class="popular">
+
+        <h2>Try These Countries 🌴</h2>
+
+        <p>Click a country to explore it.</p>
+
+        <div class="country-buttons">
+
+            <button onclick="quickSearch('India')">
+                🇮🇳 India
+            </button>
+
+            <button onclick="quickSearch('Japan')">
+                🇯🇵 Japan
+            </button>
+
+            <button onclick="quickSearch('France')">
+                🇫🇷 France
+            </button>
+
+            <button onclick="quickSearch('Australia')">
+                🇦🇺 Australia
+            </button>
+
+            <button onclick="quickSearch('Brazil')">
+                🇧🇷 Brazil
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Smart Travel Explorer
+        </p>
+
+        <p>
+            Data provided by REST Countries API 🌐
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
